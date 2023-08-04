@@ -1,0 +1,24 @@
+{
+  "name": "playcarerevised",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BDA2013/playcareRevised.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BDA2013/playcareRevised/issues"
+  },
+  "homepage": "https://github.com/BDA2013/playcareRevised#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.1"
+  }
+}
