@@ -4,6 +4,8 @@ const port = 3001;
 
 const hbs = require('express-handlebars');
 
+//var db = require("./models");
+
 app.engine('hbs', hbs.engine({
     layoutsDir: `${__dirname}/views/layouts`,
     partialsDir: `${__dirname}/views/partials`,
