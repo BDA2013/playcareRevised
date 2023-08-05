@@ -17,16 +17,16 @@ app.set('view engine', 'hbs');
 
 app.use(express.static('public'));
 
-const fakeAPI = () => "faker";
+//const fakeAPI = () => "faker";
 
-const list = true;
+//const list = true;
 
 app.get('/', (req, res) => {
-    res.render('main', {layout: 'index', goodNoodle: fakeAPI(), /* listExists: list */})
+    res.render('main', {layout: 'index' /* , goodNoodle: fakeAPI() , listExists: list */})
 });
 
 app.get('/register', (req, res) => {
-    res.render('newUserInfo', {layout: 'signup', goodNoodle: fakeAPI(), /* listExists: list */})
+    res.render('newUserInfo', {layout: 'signup' /* , goodNoodle: fakeAPI(), listExists: list */})
 });
 
 app.listen(port, () => {
