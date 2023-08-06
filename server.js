@@ -5,7 +5,7 @@ const port = 3001;
 const hbs = require('express-handlebars');
 
 
-//const sequelize = require('./config/connection');
+const sequelize = require('./config/connection');
 
 //var db = require("./models");
 
