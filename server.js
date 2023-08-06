@@ -14,6 +14,7 @@ const sequelize = require('./config/connection');
 
 //var db = require("./models");
 
+//creates a session
 const sess = {
     secret: 'Super secret secret',
     cookie: {
@@ -27,6 +28,7 @@ const sess = {
     }),
   };
 
+//Engine for the handlebaers
 app.engine('hbs', hbs.engine({
     layoutsDir: `${__dirname}/views/layouts`,
     partialsDir: `${__dirname}/views/partials`,
@@ -34,6 +36,7 @@ app.engine('hbs', hbs.engine({
     defaultLayout: 'index'
 }));
 
+//sets the handlebars engine 
 app.set('view engine', 'hbs');
 
 app.use(express.json());
