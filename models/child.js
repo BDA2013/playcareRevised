@@ -1,7 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Child extends Model {}
+class Child extends Model {
+  
+}
 
 Child.init(
   {
@@ -26,10 +28,14 @@ Child.init(
       unique: true,
       validate: {
         isEmail: true,
-      },
-    }
-  },
-  {
+      }
+    },
+    parent_password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
+
     // When adding hooks via the init() method, they go below
     hooks: {
       // Use the beforeCreate hook to work with data before a new instance is created
