@@ -28,7 +28,7 @@ Schedule.init(
       Schedule.belongsTo(models.Child, {
         foreignKey: {allowNull: true, defaultValue:0}
       });
-    }
+    },  
 );
 
 module.exports = Schedule;
