@@ -28,7 +28,8 @@ Schedule.init(
       Schedule.belongsTo(models.Child, {
         foreignKey: {allowNull: true, defaultValue:0}
       });
-    }
+    },
+    sequelize
 );
 
 module.exports = Schedule;

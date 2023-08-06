@@ -4,10 +4,13 @@
 weekdays, and weekends by appointments to be as flexable to provide parents the opportunity to drop their child off for
 any reasons. </p>
 
+{{#if loggedIn}}
+
+{{else}}
 <h2>Have an account?</h2>
 
 {{> returningUserInfo}}
-
+{{/if}}
 <!-- 
 <h2>Who is good today?</h2>
 {{#if listExists}}
